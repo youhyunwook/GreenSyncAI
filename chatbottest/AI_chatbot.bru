@@ -1,0 +1,17 @@
+meta {
+  name: AI_chatbot
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3001/ask
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "userMessage": "토마토 수경재배 최적 온도 알려줘"
+  }
+}

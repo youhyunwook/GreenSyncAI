@@ -1,0 +1,25 @@
+meta {
+  name: chatbottest
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:11434/api/generate
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "model": "qwen3:1.7b",
+    "prompt": "토마토 수경재배는 어떻게 하지?",
+    "stream": false,
+    "think": false,
+    "system": "너는 스마트팜을 위한 농장 AI야. 농작물의 성장 상태를 모니터링하고, 최적의 재배 환경을 제공하며, 농부들에게 전문적인 조언을 제공한다."
+  }
+}

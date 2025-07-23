@@ -21,7 +21,7 @@ if len(sys.argv) < 2:
     exit(1)
 
 FARM_ID = sys.argv[1]
-print(f"Farm ID: {FARM_ID}")
+sys.stderr.write(f"Farm ID: {FARM_ID}")
 
 FARM_ID = int(FARM_ID)
 

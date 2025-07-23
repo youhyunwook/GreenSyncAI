@@ -40,8 +40,6 @@ function App() {
         
       <div style={{ padding: '2rem' }}>
    
-        {/* 다른 대시보드 위젯들 … */}
-   
         {/* AI 분석 버튼 */}
         <AIButton farmId={farmId} />
    
